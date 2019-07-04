@@ -1,0 +1,131 @@
+// Colors
+$primary-blue-color: hsl(223, 87%, 63%);
+$secondary-paleblue-color: hsl(223, 100%, 88%);
+$secondary-lightred-color: hsl(354, 100%, 66%);
+$neutral-gray-color: hsl(0, 0%, 59%);
+$neutral-verydarkblue-color: hsl(209, 33%, 12%);
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+input,
+button {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  .wrapper {
+    min-height: 100vh;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    header {
+      padding: 70px;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 0 50px;
+      h1 {
+        color: $neutral-gray-color;
+        font-weight: 300;
+        letter-spacing: 1px;
+        span {
+          color: $neutral-verydarkblue-color;
+          font-weight: 700;
+        }
+      }
+      h3 {
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 300;
+      }
+      form {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+          flex: 1;
+          margin-right: 20px;
+          font-size: 14px;
+          padding: 16px 0 16px 30px;
+          border-radius: 50px;
+          border: 1px solid #999;
+          user-select: none;
+        }
+        button {
+          font-size: 14px;
+          color: white;
+          font-weight: 600;
+          padding: 16px 50px;
+          border-radius: 50px;
+          border: none;
+          background-color: $primary-blue-color;
+        }
+      }
+      .image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+      }
+      .footer {
+        .copyrights {
+          color: $neutral-gray-color;
+          font-size: 15px;
+          padding: 50px;
+        }
+      }
+    }
+  }
+}
+
+// font awesome styling
+
+.fa {
+  font-size: 30px;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: #fa3d30;
+  color: white;
+}

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+input,
+button {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+body .wrapper {
+  min-height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .wrapper header {
+  padding: 70px;
+}
+
+body .wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 50px;
+}
+
+body .wrapper main h1 {
+  color: #969696;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+body .wrapper main h1 span {
+  color: #151f29;
+  font-weight: 700;
+}
+
+body .wrapper main h3 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+body .wrapper main form {
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper main form input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+  font-size: 14px;
+  padding: 16px 0 16px 30px;
+  border-radius: 50px;
+  border: 1px solid #999;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .wrapper main form button {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  padding: 16px 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: #4f7df3;
+}
+
+body .wrapper main .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper main .image img {
+  width: 100%;
+}
+
+body .wrapper main .footer .copyrights {
+  color: #969696;
+  font-size: 15px;
+  padding: 50px;
+}
+
+.fa {
+  font-size: 30px;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #fa3d30;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
