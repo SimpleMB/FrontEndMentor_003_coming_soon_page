@@ -14,7 +14,7 @@ button {
 
 body .wrapper {
   min-height: 100vh;
-  max-width: 700px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   display: -webkit-box;
@@ -81,7 +81,7 @@ body .wrapper main form input {
           flex: 1;
   margin-right: 20px;
   font-size: 14px;
-  padding: 16px 0 16px 30px;
+  padding: 16px 30px 16px 30px;
   border-radius: 50px;
   border: 1px solid #999;
   -webkit-user-select: none;
@@ -94,10 +94,23 @@ body .wrapper main form button {
   font-size: 14px;
   color: white;
   font-weight: 600;
-  padding: 16px 50px;
+  padding: 16px 40px;
   border-radius: 50px;
   border: none;
   background-color: #4f7df3;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 10px #c2d3ff;
+          box-shadow: 0 5px 10px #c2d3ff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .wrapper main form button:hover {
+  -webkit-box-shadow: 0 7px 12px #c2d3ff;
+          box-shadow: 0 7px 12px #c2d3ff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.8;
 }
 
 body .wrapper main .image {
@@ -157,5 +170,25 @@ body .wrapper main .footer .copyrights {
 .fa-instagram {
   background: #fa3d30;
   color: white;
+}
+
+@media (max-width: 640px) {
+  body .wrapper main {
+    padding: 0 20px;
+  }
+  body .wrapper main form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .wrapper main form input {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  body .wrapper main .footer .social-media {
+    padding: 50px 0 0 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

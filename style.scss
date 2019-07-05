@@ -22,7 +22,7 @@ button {
 body {
   .wrapper {
     min-height: 100vh;
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -59,7 +59,7 @@ body {
           flex: 1;
           margin-right: 20px;
           font-size: 14px;
-          padding: 16px 0 16px 30px;
+          padding: 16px 30px 16px 30px;
           border-radius: 50px;
           border: 1px solid #999;
           user-select: none;
@@ -68,10 +68,18 @@ body {
           font-size: 14px;
           color: white;
           font-weight: 600;
-          padding: 16px 50px;
+          padding: 16px 40px;
           border-radius: 50px;
           border: none;
           background-color: $primary-blue-color;
+          cursor: pointer;
+          box-shadow: 0 5px 10px $secondary-paleblue-color;
+          transition: 0.2s;
+        }
+        button:hover {
+          box-shadow: 0 7px 12px $secondary-paleblue-color;
+          transform: scale(1.05);
+          opacity: 0.8;
         }
       }
       .image {
@@ -128,4 +136,29 @@ body {
 .fa-instagram {
   background: #fa3d30;
   color: white;
+}
+
+// media queries
+@media (max-width: 640px) {
+  body {
+    .wrapper {
+      main {
+        padding: 0 20px;
+        form {
+          flex-direction: column;
+          input {
+            margin-right: 0;
+            margin-bottom: 20px;
+            width: 100%;
+          }
+        }
+        .footer {
+          .social-media {
+            padding: 50px 0 0 0;
+          }
+          
+        }
+      }
+    }
+  }
 }
