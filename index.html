@@ -16,7 +16,10 @@
       href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>Frontend Mentor | Ping coming soon page</title>
 
@@ -51,19 +54,30 @@
       <main>
         <h1>We are launching <span>soon!</span></h1>
         <h3>Subscribe and get notified</h3>
-        <form>
-          <input
-            type="email"
-            class="input-email"
-            placeholder="Your email address..."
-          />
+        <form autocomplete="off">
+          <div class="email">
+            <input
+              type="email"
+              name="email"
+              class="input-email"
+              placeholder="Your email address..."
+            />
+            <p class="warning" data-name="email">
+              Please provide a valid email adress
+            </p>
+          </div>
           <button class="btn-submit">Notify Me</button>
         </form>
+
         <section class="image">
           <img src="./images/illustration-dashboard.png" alt="dashboard" />
         </section>
         <section class="footer">
-          <section class="social-media"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-instagram"></a></section>
+          <section class="social-media">
+            <a href="#" class="fa fa-facebook"></a
+            ><a href="#" class="fa fa-twitter"></a
+            ><a href="#" class="fa fa-instagram"></a>
+          </section>
           <section class="copyrights">
             &copy; Copyright Ping. All rights reserved.
           </section>
@@ -78,5 +92,6 @@
         </p>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
