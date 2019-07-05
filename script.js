@@ -11,9 +11,11 @@ const validate = function (e) {
   const warningElement = document.querySelector(`.warning[data-name=${e.target.name}]`);
   if (!testRegex) {
     warningElement.classList.add('active');
+    e.target.classList.add('error');
     btnSubmit.setAttribute('disabled', 'true');
   } else {
     warningElement.classList.remove('active');
+    e.target.classList.remove('error');
     btnSubmit.removeAttribute('disabled');
   }
    

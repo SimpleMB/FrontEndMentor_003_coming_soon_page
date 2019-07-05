@@ -97,6 +97,10 @@ body .wrapper main form .email input {
   border: 1px solid #999;
 }
 
+body .wrapper main form .email input.error {
+  border-color: red;
+}
+
 body .wrapper main form .email .warning {
   display: none;
 }
